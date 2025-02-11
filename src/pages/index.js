@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Navbar from "@/components/navbar";
-import Services from "@/components/services";
-import Welcome from "@/components/welcome";
+import Navbar from "../components/navbar";
+import Services from "../components/services";
+import Welcome from "../components/welcome";
+
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
