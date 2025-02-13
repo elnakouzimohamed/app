@@ -10,7 +10,7 @@ const Services = () => {
    
 
     return (
-        <section className="styles.services">
+        <section className="services">
             <h2 >Check Out Our Services</h2>
             <div className="servicesContainer">
                 {services.map(service => (
