@@ -141,3 +141,12 @@ body {
   border-radius: 5px; 
 }
 
+
+@media screen and (max-width: 480px){
+  .servicesContainer{
+    flex-direction: column;
+  }
+
+
+
+}
