@@ -15,7 +15,7 @@ const Services = () => {
             <div className="servicesContainer">
                 {services.map(service => (
                     <div key={service.id} className="serviceCard">
-                        <Image src="/service.jpg" alt={service.title} width={300} height={200} />
+                        <img src="/service.jpg" alt={service.title} width={300} height={200} />
                         <h3>{service.title}</h3>
                         <p>{service.description}</p>
                     </div>
