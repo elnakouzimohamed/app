@@ -145,6 +145,7 @@ body {
 @media screen and (max-width: 480px){
   .servicesContainer{
     flex-direction: column;
+    align-items: center;
   }
   .background{
     width: 100%;
