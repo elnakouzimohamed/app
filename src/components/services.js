@@ -15,7 +15,14 @@ const Services = () => {
             <div className="servicesContainer">
                 {services.map(service => (
                     <div key={service.id} className="serviceCard">
-                        <img src="/service.jpg" />
+                      <Image 
+  src="/service.jpg" 
+  alt={service.title} 
+  width={300} 
+  height={200} 
+  style={{ width: "100%", height: "auto" }} 
+  priority 
+/>
                         <h3>{service.title}</h3>
                         <p>{service.description}</p>
                     </div>
