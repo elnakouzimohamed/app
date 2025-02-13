@@ -76,13 +76,16 @@ body {
   text-align: center;
   padding-bottom: 20px;
   font-weight: bold;
+  padding-top: 20px;
+  font-size: 24px;
 }
 
-.services h2 {
+.services h1 {
   text-align: center;
   padding-bottom: 20px;
   font-weight: bold;
   padding-top: 70px;
+  font-size: 28px;
 }
 
 .serviceCard img {
