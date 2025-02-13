@@ -40,11 +40,13 @@ body {
   text-align: center;
   max-width: 1400px;
   margin:0 auto;
+  font-size: 24px;
   
 }
 
 .backgroundText h1{
   font-weight: bold;
+  font-size: 32px;
 
 }
 .services {
