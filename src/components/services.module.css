@@ -1,24 +1,36 @@
 .services {
-    text-align: center;
-    padding: 40px 20px;
+    
+    
     background-color: #f9f9f9;
+   
+}
+
+.servicesContainer {
+    display: flex;
+    gap: 90px;
     max-width: 1400px;
     margin:0 auto;
-}
+    
+    }
 
-.services-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service-card {
+.serviceCard {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.services h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
 }

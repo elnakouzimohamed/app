@@ -1,5 +1,5 @@
 
-.welcome .background {
+.background {
     background: url('/background.jpg') no-repeat center center/cover;
     width: 100%;
     height: 500px;
@@ -7,8 +7,14 @@
     align-items: center;
     justify-content: center;
     color: white;
+    max-width: 1400px;
+    margin:0 auto;
+    align-items: center;
 }
 
-.welcome .background-text {
+.backgroundText {
     text-align: center;
+    max-width: 1400px;
+    margin:0 auto;
+    
 }
