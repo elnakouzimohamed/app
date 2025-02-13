@@ -12,3 +12,4 @@ const Welcome = () => {
         </section>
     );
 };
+export default Welcome;
