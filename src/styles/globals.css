@@ -325,6 +325,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .servicesContainer{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .background{
+    width: 100%;
+  }
+ 
+  .services{
+    width: 100%;
+  }
+
 
   .contact-container{
     width: 70%;
