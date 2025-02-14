@@ -324,3 +324,12 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+
+  .contact-container{
+    width: 70%;
+  }
+  .contact-container button{
+    width: 100%;
+  }
+}
