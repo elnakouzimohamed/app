@@ -227,7 +227,7 @@ footer {
 .contact-container{
   margin: 0 auto;
   max-width: 1400px;
-  width: 30%;
+  width: 500px;
   background-color: rgba(250, 246, 246, 0.7);
   padding: 15px;
 
@@ -313,24 +313,29 @@ footer {
     margin: 0 auto;
   }
   .serviceCard{
-    width: 350px
+    width: 300px
   }
   .background{
     width: 100%;
   }
  
+  .contact-container{
+    max-width: 300px;
+    width:90%;
+  }
   
 
-  .contact-container{
-    width: 250px;
-  }
- 
   .contact-container button{
-    width: 100%;
+    width: 200px;
   }
 
-.contact-container input{
-  width: 100%;
+  .contact-container input{
+  width: 200px;
+}
+  
+
+.faq-item{
+  width: 300px;
 }
 
 }

@@ -5,7 +5,7 @@ export default function Footer(){
 
         <footer>
         <p>Connect with us:</p>
-        <div class="icons">
+        <div className="icons">
         <a href ="https://www.linkedin.com/">
             <img  src="icons8-linkedin-48.png"/>
         </a>
