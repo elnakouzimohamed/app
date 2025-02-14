@@ -315,5 +315,12 @@ footer {
     width: 100%;
   }
 
+  .contact-container{
+    width: 70%;
+  }
+  .contact-container button{
+    width: 100%;
+  }
 
 }
+
