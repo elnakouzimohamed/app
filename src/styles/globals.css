@@ -70,6 +70,7 @@ body {
   max-width: 1400px;
   margin:0 auto;
   align-items: center;
+  padding-bottom: 20px;
   }
 
 .serviceCard {
@@ -139,6 +140,164 @@ body {
   background-color: rgba(0, 0, 0, 0.1); 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   border-radius: 5px; 
+}
+.faq {
+    
+  background-color: #f9f9f9;
+  text-align: left;
+  padding: 20px;
+ 
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin:0 auto;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: #f1f1f1;
+}
+
+.faq-answer {
+  max-height: 0; 
+  opacity: 0;   
+  overflow: hidden; 
+  transition: max-height 0.5s ease, opacity 0.5s ease; 
+  padding: 0; 
+}
+
+.faq-answer.open {
+  max-height: 200px; 
+  opacity: 1;        
+  padding: 15px;     
+}
+footer {
+
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+.footer p{
+  padding: 10px;
+}
+
+.contact {
+  background: repeating-linear-gradient(
+      90deg,
+      #b0dfe5,
+      #b0dfe5 20px,
+      #a9d8df 20px,
+      #a9d8df 40px
+  );
+  padding: 40px 20px;
+  text-align: center;
+ 
+
+}
+.contact-container{
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 35%;
+  background-color: rgba(250, 246, 246, 0.7);
+  padding: 15px;
+
+}
+
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  width: 60%;
+  margin: 0 auto;
+  max-width: 1400px;
+  
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%; 
+
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.contact-container textarea {
+  height: 100px; 
+  resize: vertical;
+}
+
+.contact-container button {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 1400px;
+  
+}
+
+.contact-container button:hover {
+  background-color: #0056b3;
+}
+
+.contact-container h2{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 32px;
+}
+.icon {
+ 
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+.icons{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 1400px;
+  
 }
 
 
