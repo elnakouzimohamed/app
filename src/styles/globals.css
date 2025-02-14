@@ -312,7 +312,9 @@ footer {
   .services{
     margin: 0 auto;
   }
- 
+  .serviceCard{
+    width: 350px
+  }
   .background{
     width: 100%;
   }
