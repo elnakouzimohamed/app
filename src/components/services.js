@@ -10,8 +10,8 @@ const Services = () => {
    
 
     return (
-        <section className="services">
-            <h1 >Check Out Our Services</h1>
+        <section className="mx-auto my-20">
+            <h1 className="text-center font-[bold] text-[28px] pt-[70px] pb-5" >Check Out Our Services</h1>
             <div className="servicesContainer">
                 {services.map(service => (
                     <div key={service.id} className="serviceCard">

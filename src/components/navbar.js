@@ -5,16 +5,20 @@ import Link from "next/link";
 export default function Navbar() {
    
     return (
-        <header> 
-            <nav className="navbar">
-                <div className="logo">
-                    <Image src="/logo.jpg" alt="Logo" width={100} height={50} />
+      
+
+        <header className="bg-white shadow-md">
+            <nav className="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
+
+                <div >
+                    
                 </div>
-                <ul className="navLinks">
-                    <li><Link href="#home">Home</Link></li>
-                    <li><Link href="#about">About</Link></li>
-                    <li><Link href="#contact">Contact</Link></li>
+                <ul className="flex space-x-6 text-gray-800 font-medium">
+                    <li><Link href="#home" className="hover:text-blue-500">Home</Link></li>
+                    <li><Link href="#about" className="hover:text-blue-500">About</Link></li>
+                    <li><Link href="#contact" className="hover:text-blue-500">Contact</Link></li>
                 </ul>
+               
             </nav>
         </header>
     );
