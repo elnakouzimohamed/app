@@ -10,11 +10,11 @@ const Services = () => {
    
 
     return (
-        <section className="mx-auto my-20">
-            <h1 className="text-center font-[bold] text-[28px] pt-[70px] pb-5" >Check Out Our Services</h1>
-            <div className="servicesContainer">
+        <section className="flex justify-center gap-5 mx-auto my-0 flex-wrap pb-3">
+            <h1 className="text-center font-bold text-[32px] pt-[70px] pb-5" >Check Out Our Services</h1>
+            <div className="gap-5 flex items-center mx-auto my-0">
                 {services.map(service => (
-                    <div key={service.id} className="serviceCard">
+                    <div key={service.id} className="bg-[white] border w-[400px] text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-5 rounded-lg border-solid border-[#ddd];">
                       <Image 
   src="/service.jpg" 
   alt={service.title} 
@@ -23,7 +23,7 @@ const Services = () => {
   style={{ width: "100%", height: "auto" }} 
   priority 
 />
-                        <h3>{service.title}</h3>
+                        <h3 className="font-bold">{service.title}</h3>
                         <p>{service.description}</p>
                     </div>
                 ))}

@@ -7,16 +7,16 @@ export default function Navbar() {
     return (
       
 
-        <header className="bg-white shadow-md">
-            <nav className="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
+        <header>
+            <nav className="flex justify-between items-center max-w-[1400px] mx-auto my-1 px-5 py-[15px] mb-1">
 
                 <div >
                     
                 </div>
-                <ul className="flex space-x-6 text-gray-800 font-medium">
-                    <li><Link href="#home" className="hover:text-blue-500">Home</Link></li>
-                    <li><Link href="#about" className="hover:text-blue-500">About</Link></li>
-                    <li><Link href="#contact" className="hover:text-blue-500">Contact</Link></li>
+                <ul className="flex gap-5">
+                    <li><Link href="#home" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">Home</Link></li>
+                    <li><Link href="#about" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">About</Link></li>
+                    <li><Link href="#contact" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">Contact</Link></li>
                 </ul>
                
             </nav>
