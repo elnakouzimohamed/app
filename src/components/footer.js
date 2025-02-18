@@ -24,7 +24,7 @@ export default function Footer(){
         <br/>
         <p> All rights reserved - 2023 &copy; </p>
       
-        <p>Creo Hub</p>
+        <p className="mb-2">Creo Hub</p>
     </footer>
     );
 
