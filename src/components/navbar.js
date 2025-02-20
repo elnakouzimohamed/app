@@ -8,7 +8,7 @@ export default function Navbar() {
       
 
         <header>
-            <nav className="flex justify-between items-center max-w-[1400px] mx-auto my-2 px-5 py-[15px] mb-2">
+            <nav className="lg: flex justify-between items-center max-w-[1400px] mx-auto my-2 px-5 py-[15px] mb-2 sm:space-x-0 space-y-0 mx-0">
 
                 <div >
                     
