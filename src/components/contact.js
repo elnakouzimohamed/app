@@ -9,7 +9,7 @@ export default function Contact() {
 <section className="flex text-center justify-center px-5 py-10 my-1 sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
 
  id="contact">
-    <div className="max-w-[1400px] w-[500px] bg-[rgba(250,246,246,0.7)] mx-auto my-0 p-[15px]">
+    <div className="max-w-[1400px] w-[500px] bg-[rgba(250,246,246,0.7)] mx-auto my-0 p-[15px] sm:w-[60%]">
         <h2 className="my-4 font-bold text-3xl">Contact us</h2>
         <form className="flex flex-col gap-[15px] w-96 max-w-[1400px] mx-auto my-0 text-[22px]">
             <input type="text" placeholder="Name" required/>
