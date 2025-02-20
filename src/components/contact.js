@@ -1,12 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect } from "react";
 
 export default function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Form submitted!");
     };
+
+    useEffect(() => {
+        const handleBeforeUnload = (event) => {
+            event.preventDefault();
+            event.returnValue = ""; 
+        };
+    
+        window.addEventListener("beforeunload", handleBeforeUnload);
+    
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, []);
+    
     return (
         
 <section className="flex text-center justify-center px-5 py-10 my-1 sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
