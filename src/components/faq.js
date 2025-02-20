@@ -9,7 +9,8 @@ export default function Faq() {
             setOpenIndexes(openIndexes.filter((i) => i !== index));
         } else {
             // Otherwise, add it to the array (open the FAQ item)
-            setOpenIndexes([...openIndexes, index]);
+            setOpenIndexes((prev) => [...prev, index]);
+
         }
     };
 
