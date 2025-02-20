@@ -37,7 +37,7 @@ export default function Faq() {
                     <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] md:w-[500px] sm:w-[250px] w-[250px]">
                         <button className="w-full text-left text-base cursor-pointer font-[bold] flex justify-between items-center p-[15px] border-[none] hover:bg-[#f1f1f1];" style={{ background: "white"}} onClick={() => toggleAnswer(index)}>
                             {item.question}
-                            <span className="icon">{openIndexes.includes(index) ? "−" : "+"}</span>
+                            <span>{openIndexes.includes(index) ? "−" : "+"}</span>
                         </button>
                         {openIndexes.includes(index) && (
                             <div className="max-h-[200px] opacity-100 p-[15px]">{item.answer}</div>
