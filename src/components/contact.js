@@ -7,19 +7,25 @@ export default function Contact() {
         event.preventDefault();
         console.log("Form submitted!");
     };
-
     useEffect(() => {
-        const handleBeforeUnload = (event) => {
-            event.preventDefault();
-            event.returnValue = ""; 
+        const saveUserActivity = () => {
+            navigator.sendBeacon("/api/saveActivity", JSON.stringify({ action: "user_exited" }));
         };
     
-        window.addEventListener("beforeunload", handleBeforeUnload);
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === "hidden") {
+                saveUserActivity();
+            }
+        };
+    
+        document.addEventListener("visibilitychange", handleVisibilityChange);
     
         return () => {
-            window.removeEventListener("beforeunload", handleBeforeUnload);
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
         };
     }, []);
+    
+    
     
     return (
         
