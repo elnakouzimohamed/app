@@ -7,24 +7,7 @@ export default function Contact() {
         event.preventDefault();
         console.log("Form submitted!");
     };
-    useEffect(() => {
-        const saveUserActivity = () => {
-            navigator.sendBeacon("/api/saveActivity", JSON.stringify({ action: "user_exited" }));
-        };
-    
-        const handleVisibilityChange = () => {
-            if (document.visibilityState === "hidden") {
-                saveUserActivity();
-            }
-        };
-    
-        document.addEventListener("visibilitychange", handleVisibilityChange);
-    
-        return () => {
-            document.removeEventListener("visibilitychange", handleVisibilityChange);
-        };
-    }, []);
-    
+   
     
     
     return (
