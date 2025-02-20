@@ -15,7 +15,7 @@ export default function Contact() {
             <input type="text" placeholder="Name" required/>
             <input type="email" placeholder="Email" required/>
             <textarea placeholder="Message" required></textarea>
-            <button type="submit" className=" bg-[#007bff] text-[white] text-center text-base cursor-pointer max-w-[1400px] mx-auto my-0 p-2.5 rounded-[5px] border-[none] hover:bg-[#0056b3] md:w-20 sm:w-[70px] w-[60px] md:text-[20px] sm:text-[18px] text-[15px]">Submit</button>
+            <button type="submit" className=" bg-[#007bff] text-[white] text-center text-base cursor-pointer max-w-[1400px] mx-auto my-0 p-2.5 rounded-[5px] border-[none] hover:bg-[#0056b3] md:w-20 sm:w-[70px] w-[60px] md:text-[20px] sm:text-[18px] text-[14px]">Submit</button>
         </form>
     </div>
 </section>
