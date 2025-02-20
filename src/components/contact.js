@@ -16,7 +16,7 @@ export default function Contact() {
 
  id="contact">
     <div className="max-w-[1400px] bg-[rgba(250,246,246,0.7)] mx-auto my-0 p-[15px] md:w-[500px] sm:w-[350px] w-[300px] ">
-        <h2 className="py-1 font-bold text-3xl">Contact us</h2>
+        <h2 className="py-2 font-bold text-3xl">Contact us</h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-[15px] max-w-[1400px] mx-auto my-0  md:w-[300px] sm:w-[250px] w-[200px] md:text-[22px] sm:text-[21px] text-[20px]">
             <input id="name" name="name" type="text" placeholder="Name" autoComplete="name" required/>
             <input id="email" name="email" type="email" placeholder="Email" autoComplete="email" required/>
