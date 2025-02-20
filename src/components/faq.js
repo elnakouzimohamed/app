@@ -32,9 +32,9 @@ export default function Faq() {
     return (
         <section className="bg-[#f9f9f9] text-left p-5">
             <h2 className="text-center text-[2rem] font-[bold] mb-5">Frequently Asked Questions</h2>
-            <div className="sm:w-[400px] w-[300px]">
+            <div className="mx-auto max-w-[1400px]">
                 {faqItems.map((item, index) => (
-                    <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] md:w-[300px] sm:w-[250px] w-[200px]">
+                    <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] md:w-[500px] sm:w-[250px] w-[200px]">
                         <button className="w-full text-left text-base cursor-pointer font-[bold] flex justify-between items-center p-[15px] border-[none] hover:bg-[#f1f1f1];" style={{ background: "white"}} onClick={() => toggleAnswer(index)}>
                             {item.question}
                             <span className="icon">{openIndexes.includes(index) ? "−" : "+"}</span>
