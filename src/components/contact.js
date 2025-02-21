@@ -12,7 +12,7 @@ export default function Contact() {
     
     return (
         
-<section className="flex text-center justify-center px-5 py-10  sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
+<section className="flex text-center justify-center px-5 py-10 my-2 sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
 
  id="contact">
     <div className=" bg-[rgba(250,246,246,0.7)] p-[50px]">
