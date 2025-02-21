@@ -12,9 +12,9 @@ const Services = () => {
     return (
         <section className=" gap-5 flex-wrap pt-2 pb-12">
             <h1 className="text-center font-bold  pt-[70px] pb-5 text-[32px]" >Check Out Our Services</h1>
-            <div className=" flex items-center justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3 py-[20px] px-[110px] ">
+            <div className=" flex items-center justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3 py-[20px] md:px-[110px] sm:px-[80px] px-[50px] ">
                 {services.map(service => (
-                    <div key={service.id} className="bg-[white] padd border text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-5 rounded-lg border-solid border-[#ddd]">
+                    <div key={service.id} className="bg-[white] padd border text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)]  rounded-lg border-solid border-[#ddd] md:p-5 sm:p-4 p-2">
                       <Image 
   src="/service.jpg" 
   alt={service.title} 
