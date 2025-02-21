@@ -22,13 +22,13 @@ const Services = () => {
         <section className=" gap-5 flex-wrap pt-2 pb-12">
             <h1 className="text-center font-bold  pt-[70px] pb-5 text-[32px]" >Check Out Our Services</h1>
             <div className="flex items-center justify-center text-center ">
-            <label className="font-bold text-[24px]" >Filter by Service: </label>
+            <label className="font-bold sm:text-[24px] text-[20px]" >Filter by Service: </label>
       <select
         
         value={selectedService}
         onChange={(e) => setSelectedService(e.target.value)}
       >
-        <option value="All">All</option>
+        <option value="All" className="sm:text-[24px] text-[20px]">All</option>
         {services.map((service) =>( 
                 <option key={service.id} value={service.title}>{service.title}</option>
         ))}
