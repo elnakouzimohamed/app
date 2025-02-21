@@ -10,7 +10,7 @@ const Services = () => {
    
 
     return (
-        <section className=" gap-5 flex-wrap p-2 pb-5">
+        <section className=" gap-5 flex-wrap pt-2 pb-12">
             <h1 className="text-center font-bold  pt-[70px] pb-5 text-[32px]" >Check Out Our Services</h1>
             <div className=" flex items-center justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3  ">
                 {services.map(service => (
