@@ -31,7 +31,7 @@ export default function Faq() {
 
     return (
         <section className="bg-[#f9f9f9] text-left p-5">
-            <h2 className="text-center text-[2rem] font-[bold] mb-5">Frequently Asked Questions</h2>
+            <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
             <div className="mx-auto max-w-[1400px] p-[20px]">
                 {faqItems.map((item, index) => (
                     <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] max-w-[500px] ">
