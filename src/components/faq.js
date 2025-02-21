@@ -29,6 +29,13 @@ export default function Faq() {
         }
     ];
 
+    const [searchTerm, setSearchTerm] = useState("");
+
+    
+    const filteredFaqs = faqItems.filter(faq =>
+      faq.question.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
         <section className="bg-[#f9f9f9] text-left p-12">
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
