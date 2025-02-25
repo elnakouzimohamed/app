@@ -39,7 +39,7 @@ const Services = () => {
 
             <div className={`flex items-center justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3 py-[20px] ${styl}`}>
                 {filteredServices.map(service => (
-                    <div key={service.id} className="bg-[white] padd border text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] rounded-lg border-solid border-[#ddd] md:p-5 sm:p-4 p-2">
+                    <div key={service.id} className="bg-[white] border text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] rounded-lg border-solid border-[#ddd] md:p-5 sm:p-4 p-2">
                         <Image 
                             src="/service.jpg" 
                             alt={service.title} 
