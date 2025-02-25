@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
 import Image from 'next/image';
+import tailwindConfig from "../../tailwind.config";
 
 import 'swiper/css';
 
@@ -68,38 +69,69 @@ export default () => {
             );
   return (
     <Swiper
-     
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={0}
+    slidesPerView={1}
+    navigation
+    pagination={{ clickable: true }}
+    autoplay={{ delay: 3000, disableOnInteraction: false }}
+    className="w-full"
+  >
     
-     
+    <SwiperSlide>
       <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
    
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
    
       <div className="relative text-center max-w-[1400px] mx-auto p-2">
-      <SwiperSlide>
+      
         <h1 className="font-bold sm:text-[32px] text-[24px]">Welcome to Our Website</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-        <p className="sm:text-[24px] text-[20px]">Discover our amazing services and products.</p>
-        </SwiperSlide>
-        <SwiperSlide>
-        <span className="sm:text-[24px] text-[20px] text-gray-600">
-    Join us and explore endless possibilities!
-  </span>
-        </SwiperSlide>
+        
+        
+      
+        
       </div>
     </section>
+    </SwiperSlide>
+    <SwiperSlide>
+   
+
+    <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
+   
+   <div className="absolute inset-0 bg-black opacity-20"></div>
+
+
+   <div className="relative text-center max-w-[1400px] mx-auto p-2">
+   
+   <p className="sm:text-[24px] text-[20px]">Discover our amazing services and products.</p>
+     
+     
+   
+     
+   </div>
+ </section>
       
+     
+    </SwiperSlide>
+    <SwiperSlide> 
+<section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
+   
+   <div className="absolute inset-0 bg-black opacity-20"></div>
+
+
+   <div className="relative text-center max-w-[1400px] mx-auto p-2">
+   
+   <span className="sm:text-[24px] text-[20px]">
+  Join us and explore endless possibilities!
+</span>
+     
+     
+   
+     
+   </div>
+ </section>
+</SwiperSlide>
         <section className="gap-5 flex-wrap pt-2 pb-12">
                     <h1 className="text-center font-bold pt-[70px] pb-5 text-[32px]">Check Out Our Services</h1>
                     
