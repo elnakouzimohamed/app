@@ -1,9 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
 import Image from 'next/image';
-// Import Swiper styles
+
 import 'swiper/css';
 
+import "swiper/css/navigation"; 
+import "swiper/css/pagination"; 
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 export default () => {
 
     const handleSubmit = (event) => {
@@ -64,11 +68,15 @@ export default () => {
             );
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
+    
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={20} // Space between slides
+    slidesPerView={4} // Show 4 slides at a time
+    navigation // Enable navigation arrows
+    pagination={{ clickable: true }} // Enable pagination
+    autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay settings
+  >
+    
       <SwiperSlide>
       <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
       
@@ -164,7 +172,7 @@ id="contact">
         </section>
     
       </SwiperSlide>
-      ...
+      
     </Swiper>
   );
 };
