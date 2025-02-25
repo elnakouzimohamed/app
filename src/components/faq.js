@@ -61,7 +61,7 @@ export default function Faq() {
             )
         
         )): <div>
-            <p>No Questions matched your Search</p>
+            <p className="flex justify-center">No Questions matched your Search!</p>
         </div>
     
     }
