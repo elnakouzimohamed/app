@@ -43,8 +43,8 @@ export default function Faq() {
             
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
             <div className="flex items-center justify-center mx-auto  gap-3 sm:flex-row flex-col sm:text-[22px] text-[18px]">
-                <label >Search for Questions:</label>
-                <input type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
+                <label htmlFor="faqSearch" >Search for Questions:</label>
+                <input id="faqSearch" name="faqSearch" type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
             </div>
             <div className="mx-auto max-w-[1400px] p-[20px]">
             {filteredFaqs.length >= 1? (filteredFaqs.map((item, index)=>
