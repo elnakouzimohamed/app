@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 export default function Faq() {
-    const [openIndexes, setOpenIndexes] = useState([]); // Store multiple open indexes
+    const [openIndexes, setOpenIndexes] = useState([]);
 
     const toggleAnswer = (index) => {
         if (openIndexes.includes(index)) {
-            // If the index is already open, remove it (close the FAQ item)
+           
             setOpenIndexes(openIndexes.filter((i) => i !== index));
         } else {
-            // Otherwise, add it to the array (open the FAQ item)
+        
             setOpenIndexes((prev) => [...prev, index]);
 
         }
