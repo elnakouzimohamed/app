@@ -42,7 +42,7 @@ export default function Faq() {
         <section className="bg-[#f9f9f9] text-left p-12">
             
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
-            <div className="flex items-center justify-center mx-auto text-[22px] gap-3">
+            <div className="flex items-center justify-center mx-auto  gap-3 sm:flex-row flex-col sm:text-[22px] text-[18px]">
                 <label >Search for Questions:</label>
                 <input type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
             </div>

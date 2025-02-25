@@ -17,7 +17,7 @@ const Services = () => {
         : services.filter(service => service.title === selectedService);
 
     const styl = filteredServices.length === 1 
-        ? "md:px-[540px] sm:px-[250px] px-[170px]" 
+        ? "md:px-[540px] sm:px-[100px] px-[50px]" 
         : "md:px-[110px] sm:px-[80px] px-[50px]";
 
     return (
