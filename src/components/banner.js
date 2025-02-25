@@ -65,7 +65,7 @@ export default function BannerSlider(){
     <SwiperSlide>
    
 
-    <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
+    <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background2.jpg')" }}>
    
    <div className="absolute inset-0 bg-black opacity-20"></div>
 
@@ -83,7 +83,7 @@ export default function BannerSlider(){
      
     </SwiperSlide>
     <SwiperSlide> 
-<section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
+<section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background3.jpg')" }}>
    
    <div className="absolute inset-0 bg-black opacity-20"></div>
 
