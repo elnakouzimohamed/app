@@ -35,22 +35,36 @@ export default function Faq() {
     const filteredFaqs = faqItems.filter(faq =>
       faq.question.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    console.log(filteredFaqs)
+    console.log(filteredFaqs.length)
 
     return (
         <section className="bg-[#f9f9f9] text-left p-12">
+            <div>
+                <input className="flex my-0 justify-center items-center" type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
+            </div>
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
             <div className="mx-auto max-w-[1400px] p-[20px]">
-                {faqItems.map((item, index) => (
-                    <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] max-w-[500px] ">
+            {filteredFaqs.length >= 1? (filteredFaqs.map((item, index)=>
+            (
+                <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] max-w-[500px] ">
                         <button className="w-full text-left text-base cursor-pointer font-[bold] flex justify-between items-center p-[15px] border-[none] hover:bg-[#f1f1f1];" style={{ background: "white"}} onClick={() => toggleAnswer(index)}>
                             {item.question}
                             <span>{openIndexes.includes(index) ? "−" : "+"}</span>
                         </button>
                         {openIndexes.includes(index) && (
                             <div className="max-h-[200px] opacity-100 p-[15px]">{item.answer}</div>
-                        )}
-                    </div>
-                ))}
+                        )}    
+                </div>
+            )
+        
+        )): <div>
+            <p>No Questions matched your Search</p>
+        </div>
+    
+    }
+            
+                
             </div>
         </section>
     );
