@@ -37,7 +37,7 @@ const Services = () => {
                 </select>
             </div>
 
-            <div className={`flex items-center max-w-[1400px] justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3 py-[20px] ${styl}`}>
+            <div className={`flex items-center max-w- justify-center mx-auto my-auto md:flex-row flex-col md:gap-8 gap-3 py-[20px] ${styl}`}>
                 {filteredServices.map(service => (
                     <div key={service.id} className="bg-[white] border text-center shadow-[0_4px_8px_rgba(0,0,0,0.1)] rounded-lg border-solid border-[#ddd] md:p-5 sm:p-4 p-2">
                         <Image 
