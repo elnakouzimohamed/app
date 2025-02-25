@@ -50,7 +50,7 @@ export default function Faq() {
             {filteredFaqs.length >= 1? (filteredFaqs.map((item, index)=>
             (
                 <div key={index} className="border overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.1)]  mx-auto my-0 rounded-[5px] border-solid border-[#ddd] max-w-[500px] ">
-                        <button className="w-full text-left text-base cursor-pointer font-[bold] flex justify-between items-center p-[15px] border-[none] hover:bg-[#f1f1f1];" style={{ background: "white"}} onClick={() => toggleAnswer(index)}>
+                        <button className="w-full text-left text-base cursor-pointer font-[bold] flex justify-between items-center p-[15px] border-[none] hover:bg-[#f1f1f1]" style={{ background: "white"}} onClick={() => toggleAnswer(index)}>
                             {item.question}
                             <span>{openIndexes.includes(index) ? "−" : "+"}</span>
                         </button>
