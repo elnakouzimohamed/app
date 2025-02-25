@@ -40,10 +40,11 @@ export default function Faq() {
 
     return (
         <section className="bg-[#f9f9f9] text-left p-12">
-            <div>
-                <input className="flex my-0 justify-center items-center" type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
-            </div>
+            
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
+            <div>
+                <input className="flex items-center mx-auto " type="text" placeholder="Search Faqs..." value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}></input>
+            </div>
             <div className="mx-auto max-w-[1400px] p-[20px]">
             {filteredFaqs.length >= 1? (filteredFaqs.map((item, index)=>
             (
