@@ -7,7 +7,7 @@ import 'swiper/css';
 import "swiper/css/navigation"; 
 import "swiper/css/pagination"; 
 
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from "swiper/modules";
 export default () => {
 
     const handleSubmit = (event) => {
@@ -68,28 +68,38 @@ export default () => {
             );
   return (
     <Swiper
+     
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
     
-    modules={[Navigation, Pagination, Autoplay]}
-    spaceBetween={20} // Space between slides
-    slidesPerView={4} // Show 4 slides at a time
-    navigation // Enable navigation arrows
-    pagination={{ clickable: true }} // Enable pagination
-    autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay settings
-  >
-    
-      <SwiperSlide>
+     
       <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>
-      
+   
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
    
       <div className="relative text-center max-w-[1400px] mx-auto p-2">
+      <SwiperSlide>
         <h1 className="font-bold sm:text-[32px] text-[24px]">Welcome to Our Website</h1>
+        </SwiperSlide>
+        <SwiperSlide>
         <p className="sm:text-[24px] text-[20px]">Discover our amazing services and products.</p>
+        </SwiperSlide>
+        <SwiperSlide>
+        <span className="sm:text-[24px] text-[20px] text-gray-600">
+    Join us and explore endless possibilities!
+  </span>
+        </SwiperSlide>
       </div>
     </section>
-      </SwiperSlide>
-      <SwiperSlide>
+      
         <section className="gap-5 flex-wrap pt-2 pb-12">
                     <h1 className="text-center font-bold pt-[70px] pb-5 text-[32px]">Check Out Our Services</h1>
                     
@@ -123,8 +133,7 @@ export default () => {
                         ))}
                     </div>
                 </section>
-      </SwiperSlide>
-      <SwiperSlide>
+   
       <section className="flex text-center justify-center px-5 py-10  sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
 
 id="contact">
@@ -138,8 +147,7 @@ id="contact">
        </form>
    </div>
 </section>
-      </SwiperSlide>
-      <SwiperSlide>
+     
       <section className="bg-[#f9f9f9] text-left p-12">
             
             <h2 className="text-center text-[32px] font-bold mb-5">Frequently Asked Questions</h2>
@@ -171,7 +179,7 @@ id="contact">
             </div>
         </section>
     
-      </SwiperSlide>
+    
       
     </Swiper>
   );
