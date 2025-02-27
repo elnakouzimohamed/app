@@ -4,33 +4,27 @@ import Image from 'next/image';
 import tailwindConfig from "../../tailwind.config";
 
 import 'swiper/css';
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
-import "swiper/css/navigation"; 
-import "swiper/css/pagination"; 
-import { useRef } from 'react';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from "swiper/modules";
 
 export default function BannerSlider(){
 
     
 
-            const prevRef = useRef(null);
-            const nextRef = useRef(null);
   return (
     <Swiper
-    modules={[Navigation, Pagination, Autoplay]}
-    spaceBetween={0}
+    // install Swiper modules
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    spaceBetween={10}
     slidesPerView={1}
     navigation
     pagination={{ clickable: true }}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
-    onInit={(swiper) => {
-        
-  
-        swiper.navigation.init();
-        swiper.navigation.update();
-      }}
-    className="w-full"
+    scrollbar={{ draggable: true }}
+    onSwiper={(swiper) => console.log(swiper)}
+    onSlideChange={() => console.log('slide change')}
   >
 
     <SwiperSlide>
