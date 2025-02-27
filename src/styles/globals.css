@@ -27,3 +27,7 @@ body {
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
+.swiper-button-next:after{ 
+  
+color: white;
+}
