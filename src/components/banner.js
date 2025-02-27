@@ -35,16 +35,16 @@ export default function BannerSlider(){
   >
 <button
         ref={prevRef}
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-600 transition"
+        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-white text-white p-3 rounded-full hover:bg-gray-600 transition"
       >
-        <FaChevronLeft size={24} />
+        <FaChevronLeft size={24} className='bg-white text-white' />
       </button>
 
       <button
         ref={nextRef}
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-600 transition"
+        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-white text-white p-3 rounded-full hover:bg-gray-600 transition"
       >
-        <FaChevronRight size={24} />
+        <FaChevronRight size={24} className='bg-white text-white'/>
       </button>    
     <SwiperSlide>
       <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: "url('/background.jpeg')" }}>

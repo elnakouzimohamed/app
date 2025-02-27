@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination"; 
 import { useRef } from 'react';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from "swiper/modules";
+import Link from 'next/link';
+
 
 export default function AboutUs(){
 
@@ -71,7 +73,29 @@ export default function AboutUs(){
 
           
   return (
+    
     <Swiper>
+          <header>
+            <nav className="flex justify-between items-center max-w-[1400px] mx-auto my-2 px-5 py-[15px] mb-2 sm:space-x-0 space-y-0">
+
+                <div >
+                     <Image 
+                      src="/logo.jpg" 
+                      alt="logo"
+                      width={300} 
+                      height={200} 
+                      style={{ width: "100%", height: "auto" }} 
+                       
+                    />
+                </div>
+                <ul className="flex gap-5">
+                    <li><Link href="#home" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">Home</Link></li>
+                    <li><Link href="#aboutus" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">About</Link></li>
+                    <li><Link href="#contact" className="no-underline text-[17px] text-[black] transition-all duration-[0.3s] ease-[ease-in-out] px-2.5 py-[5px] rounded-[5px] hover:bg-[rgba(0,0,0,0.1)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] hover:rounded-[5px]">Contact</Link></li>
+                </ul>
+               
+            </nav>
+        </header>
         <BannerSlider/>
         <section className="gap-5 flex-wrap pt-2 pb-12">
                     <h1 className="text-center font-bold pt-[70px] pb-5 text-[32px]">Check Out Our Services</h1>
@@ -155,7 +179,29 @@ id="contact">
     
      
         
-
+        <footer className="bg-[lightblue] text-[black] text-center mx-auto my-0 px-0 py-2.5 p-5">
+        <p className="p-2.5">Connect with us:</p>
+        <div className="flex justify-center flex-row gap-[15px] max-w-[1400px] mx-auto my-0 p-2.5">
+        <a href ="https://www.linkedin.com/">
+            <img  src="icons8-linkedin-48.png"/>
+        </a>
+        <a href="https://www.facebook.com/">
+            <img src="icons8-facebook-48.png"/>
+        </a>
+        <a href ="http://instagram.com/">
+            <img src="icons8-instagram-48.png"/>
+        </a>
+        <a href="https://x.com/?mx=2">
+            <img  src="icons8-twitter-48.png"/>
+        </a>
+    </div>
+      
+        
+        <br/>
+        <p> All rights reserved - 2023 &copy; </p>
+      
+        <p className="mb-2">Creo Hub</p>
+    </footer>
         </Swiper>      
   );
 };
