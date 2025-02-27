@@ -7,8 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
-import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from "swiper/modules";
+import 'swiper/css/autoplay';
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function BannerSlider(){
 
@@ -17,7 +17,7 @@ export default function BannerSlider(){
   return (
     <Swiper
     // install Swiper modules
-    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    modules={[Navigation, Pagination, Autoplay]}
     spaceBetween={0}
     slidesPerView={1}
     navigation
@@ -26,10 +26,10 @@ export default function BannerSlider(){
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
     autoplay={{
-      delay: 5000,
-      disableOnInteraction: false
+      delay: 1000,
+      disableOnInteraction: false,
     }}
-    className='w-full'
+    className="w-full"
   >
 
     <SwiperSlide>
