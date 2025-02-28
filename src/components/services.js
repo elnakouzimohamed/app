@@ -2,18 +2,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-const Services = () => {
-  const router = useRouter();
-  const [page, setPage] = useState(""); 
+const Services = ({page}) => {
+  
   const [selectedService, setSelectedService] = useState("");
 
   
-  useEffect(() => {
-    if (router.isReady) {
-      setPage(router.query.page || ""); 
-      console.log("Current Page:", router.query.page); 
-    }
-  }, [router.isReady, router.query.page]);
+
 
   const services = [
     { id: 1, title: "Service 01", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti aspernatur nihil, tenetur tempora labore!" },
@@ -27,7 +21,7 @@ const Services = () => {
     { id: 6, title: "Service 06", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti aspernatur nihil, tenetur tempora labore!" }
   ];
 
-  // Filter services based on selection
+ 
   const filteredServices = selectedService
     ? services.filter(service => service.title === selectedService)
     : services;
@@ -40,7 +34,7 @@ const Services = () => {
     ? "md:px-[540px] sm:px-[100px] px-[50px]"
     : "md:px-[110px] sm:px-[80px] px-[50px]";
 
-  // Render based on `page` value
+console.log(page)
   const content = page === "aboutus" ? (
     <>
       <div className="flex items-center justify-center text-center">

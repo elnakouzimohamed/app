@@ -19,9 +19,7 @@ import { useRouter } from 'next/router';
 
 
 export default function AboutUs(){
-    const router = useRouter()
-    const { page } = router.query;
-  console.log(page)
+
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Form submitted!");
@@ -85,7 +83,7 @@ export default function AboutUs(){
     <>
           <Navbar/>
         <BannerSlider/>
-        <Services/>
+        <Services page={"aboutus"}/>
 
      <Contact/>
      
