@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useState } from 'react';
-import Image from 'next/image';
-import tailwindConfig from "../../tailwind.config";
+
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,7 +14,7 @@ export default function BannerSlider(){
 
   return (
     <Swiper
-    // install Swiper modules
+    
     modules={[Navigation, Pagination, Autoplay]}
     spaceBetween={0}
     slidesPerView={1}
@@ -26,9 +24,11 @@ export default function BannerSlider(){
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
     autoplay={{
-      delay: 1000,
+      delay: 5000,
       disableOnInteraction: false,
+     
     }}
+    
     className="w-full"
   >
 
