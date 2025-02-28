@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function Navbar({image}) {
+export default function Navbar() {
    
     return (
       
@@ -12,7 +12,7 @@ export default function Navbar({image}) {
 
                 <div >
                      <Image 
-                      src={image} 
+                      src="/logo2.jpeg"
                       alt="logo"
                       width={300} 
                       height={200} 
