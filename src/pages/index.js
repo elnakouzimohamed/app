@@ -22,7 +22,7 @@ export default function Home() {
   return (
       <>
           <Navbar image="/logo.jpg"/>
-          <Welcome  title="Welcome to our Website" description="Discover more about our products and services"/>
+          <Welcome  title="Welcome to our Website" description="Discover more about our products and services" image="url('/background.jpeg')"/>
           
           <Services />
           <Contact/>

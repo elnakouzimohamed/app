@@ -82,7 +82,7 @@ export default function AboutUs(){
     
     <>
           <Navbar image="/logo2.jpeg"/>
-        <Welcome title="Welcome to the about page" description="Discover more About us"></Welcome>
+        <Welcome title="Welcome to the about page" description="Discover more About us" image="url('/background2.jpg')"></Welcome>
         <Services ></Services>
 
      <Contact/>
