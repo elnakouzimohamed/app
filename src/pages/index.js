@@ -22,7 +22,7 @@ export default function Home() {
   return (
       <>
           <Navbar />
-          <Welcome />
+          <Welcome  title="Welcome to our Website" description="Discover more about our products and services"/>
           
           <Services />
           <Contact/>
