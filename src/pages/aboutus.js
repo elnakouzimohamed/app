@@ -14,11 +14,14 @@ import Footer from '@/components/footer';
 import { useRef } from 'react';
 
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 
 
 export default function AboutUs(){
-
+    const router = useRouter()
+    const { page } = router.query;
+  console.log(page)
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Form submitted!");
