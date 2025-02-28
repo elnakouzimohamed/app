@@ -81,9 +81,9 @@ export default function AboutUs(){
   return (
     
     <>
-          <Navbar/>
+          <Navbar image="/logo2.jpeg"/>
         <Welcome title="Welcome to the about page" description="Discover more About us"></Welcome>
-        <Services page={"aboutus"}/>
+        <Services ></Services>
 
      <Contact/>
      

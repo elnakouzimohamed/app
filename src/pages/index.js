@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
       <>
-          <Navbar />
+          <Navbar image="/logo.jpg"/>
           <Welcome  title="Welcome to our Website" description="Discover more about our products and services"/>
           
           <Services />
