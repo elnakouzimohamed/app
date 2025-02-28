@@ -82,7 +82,7 @@ export default function AboutUs(){
     
     <>
           <Navbar/>
-        <Welcome title={"Welcome to the abut page"} description={"Discover more About us"}></Welcome>
+        <Welcome title="Welcome to the about page" description="Discover more About us"></Welcome>
         <Services page={"aboutus"}/>
 
      <Contact/>
