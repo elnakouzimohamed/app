@@ -30,9 +30,10 @@ const Services = ({page}) => {
     ? services2.filter(service => service.title === selectedService)
     : services2;
 
-  const styl = filteredServices.length === 1
+  const styl = (filteredServices.length === 1 || filteredServices2.length === 1)
     ? "md:px-[540px] sm:px-[100px] px-[50px]"
     : "md:px-[110px] sm:px-[80px] px-[50px]";
+
 
 console.log(page)
   const content = page === "aboutus" ? (
