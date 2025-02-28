@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
     <>
     <Navbar/>
   <Welcome title="Welcome to our Website" description="Discover more about our product and services"></Welcome>
-  <Services page={"aboutus"}/>
+  <Services></Services>
 
 <Contact/>
 
