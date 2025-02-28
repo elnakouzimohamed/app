@@ -82,7 +82,7 @@ export default function AboutUs(){
     
     <>
           <Navbar/>
-        <BannerSlider/>
+        <Welcome></Welcome>
         <Services page={"aboutus"}/>
 
      <Contact/>
