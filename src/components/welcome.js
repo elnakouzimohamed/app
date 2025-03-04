@@ -7,7 +7,7 @@ const Welcome = ({title, description, image, title_size , title_font }) => {
   
      
         <div className="relative text-center max-w-[1400px] mx-auto p-2">
-          <h1 className={title_font + title_size }>{title}</h1>
+          <h1 className={` ${size} ${font}`}>{title}</h1>
           <p className="sm:text-[24px] text-[20px]">{description}</p>
         </div>
       </section>
