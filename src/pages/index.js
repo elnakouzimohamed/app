@@ -22,7 +22,7 @@ export default function Home() {
   return (
       <>
           <Navbar/>
-          <Welcome  title="Welcome to our Website" description="Discover more about our products and services" image="url('/background.jpeg')" title_size=" sm:text-[32px] text-[24px]" title_font="font-bold"/>
+          <Welcome  title="Welcome to our Website" description="Discover more about our products and services" image="url('/background.jpeg')" size=" sm:text-[32px] text-[24px]" font="font-bold"/>
           
           <Services />
           <Contact style1="repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)" style2=" bg-[rgba(250,246,246,0.7)] p-[50px]"/>
