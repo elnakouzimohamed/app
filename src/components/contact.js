@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function Contact() {
+export default function Contact({style1, style2}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Form submitted!");
@@ -12,10 +12,10 @@ export default function Contact() {
     
     return (
         
-<section className="flex text-center justify-center px-5 py-10  sm:bg-cover" style={{ background: "repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)",}}
+<section className="flex text-center justify-center px-5 py-10  sm:bg-cover " style={{ background: style1,}}
 
  id="contact">
-    <div className=" bg-[rgba(250,246,246,0.7)] p-[50px]">
+    <div className={style2}>
         <h2 className="py-2 font-bold text-3xl">Contact us</h2>
         <form onSubmit={handleSubmit} className="flex flex-col mt-5 gap-[15px] max-w-[1400px] mx-auto my-0  md:w-[300px] sm:w-[250px] w-[200px] md:text-[22px] sm:text-[21px] text-[20px]">
             <input id="name" name="name" type="text" placeholder="Name" autoComplete="name" required/>

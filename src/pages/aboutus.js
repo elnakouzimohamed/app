@@ -85,7 +85,7 @@ export default function AboutUs(){
         <Welcome title="Welcome to the about page" description="Discover more About us" image="url('/background2.jpg')"></Welcome>
         <Services ></Services>
 
-     <Contact/>
+     <Contact style1="repeating-linear-gradient(45deg, #b0dfe5, #b0dfe5 20px, #a9d8df 30px, #a9d8df 10px)" style2=" bg-[rgba(147,211,177,0.7)] p-[50px]"/>
      
      <Faq/>
     

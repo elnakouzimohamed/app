@@ -25,7 +25,7 @@ export default function Home() {
           <Welcome  title="Welcome to our Website" description="Discover more about our products and services" image="url('/background.jpeg')"/>
           
           <Services />
-          <Contact/>
+          <Contact style1="repeating-linear-gradient(90deg, #b0dfe5, #b0dfe5 20px, #a9d8df 20px, #a9d8df 40px)" style2=" bg-[rgba(250,246,246,0.7)] p-[50px]"/>
           <Faq/>
           <Footer/>
       </>
