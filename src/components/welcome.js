@@ -1,4 +1,4 @@
-const Welcome = ({title, description, image, title_size , title_font }) => {
+const Welcome = ({title, description, image, size , font }) => {
     return (
       
       <section className="relative w-full h-[500px] flex items-center justify-center text-white bg-cover bg-center sm:items-center " style={{ backgroundImage: image }}>
