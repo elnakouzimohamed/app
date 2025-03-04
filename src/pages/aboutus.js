@@ -82,7 +82,7 @@ export default function AboutUs(){
     
     <>
           <Navbar/>
-        <Welcome title="Welcome to the about page" description="Discover more About us" image="url('/background2.jpg')"></Welcome>
+        <Welcome title="Welcome to the about page" description="Discover more About us" image="url('/background2.jpg')"  title_size=" sm:text-[38px] text-[32px]" title_font="italic"></Welcome>
         <Services ></Services>
 
      <Contact style1="repeating-linear-gradient(45deg, #b0dfe5, #b0dfe5 20px, #a9d8df 30px, #a9d8df 10px)" style2=" bg-[rgba(147,211,177,0.7)] p-[50px]"/>

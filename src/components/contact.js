@@ -12,7 +12,7 @@ export default function Contact({style1, style2}) {
     
     return (
         
-<section className="flex text-center justify-center px-5 py-10  sm:bg-cover " style={{ background: style1,}}
+<section className="flex text-center justify-center px-5 py-10  sm:bg-cover  " style={{ background: style1,}}
 
  id="contact">
     <div className={style2}>
